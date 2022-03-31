@@ -12,11 +12,14 @@ jobs:
     
     steps:
 
-      - uses: actions/checkout@v3
-      
-      - name: lint
-        run: pipenv run flake8
+      - uses: actions/checkout@v1
 
-      - name: test
-        run: pipenv run python -m pytest
+      - name: install 
+        run: sudo apt install pipenv
+      
+      # - name: lint
+      #   run: pipenv run flake8
+
+      # - name: test
+      #   run: pipenv run python -m pytest
       
