@@ -1,0 +1,20 @@
+name: FizzBuzzActions
+
+on:
+  push: 
+    branches: [ main ]  
+  
+jobs:
+  
+  build:
+    runs-on: ubuntu-latest
+
+    
+    steps:
+      
+      - name: lint
+        run: pipenv run flake8
+
+      - name: test
+        run: pipenv run python -m pytest
+      
