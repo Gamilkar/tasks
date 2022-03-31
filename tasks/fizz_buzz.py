@@ -1,6 +1,6 @@
 def fizz_buzz(begin, end):
     result = []
-    for number in range(begin, end+1):
+    for number in range(begin, end):
         if not number % 3 and not number % 5:
             result.append("FizzBuzz")
         elif not number % 3:
