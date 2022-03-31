@@ -19,6 +19,9 @@ jobs:
 
       - name: install   
         run: pipenv install
+
+      - name: dev install   
+        run: pipenv install --dev
       
       - name: lint
         run: pipenv run flake8
