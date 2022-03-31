@@ -14,8 +14,10 @@ jobs:
 
       - uses: actions/checkout@v1
 
-      - name: install 
+      - name: pip install 
         run: sudo apt install pipenv
+
+      - name: install   
         run: pipenv install
       
       - name: lint
