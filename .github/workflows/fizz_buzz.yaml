@@ -16,9 +16,10 @@ jobs:
 
       - name: install 
         run: sudo apt install pipenv
+        run: pipenv install
       
-      # - name: lint
-      #   run: pipenv run flake8
+      - name: lint
+        run: pipenv run flake8
 
       # - name: test
       #   run: pipenv run python -m pytest
